@@ -14,7 +14,7 @@ namespace UserRegistration_Day19
         public string regex_for_lname = "^[A-Z]{1}[a-z]{2,10}$";
         public string regex_for_email = "^[a-z0-9]{1,10}[.,-,+]*[a-z0-9]{1,10}[@]{1}[a-z]{1,9}[.]{1}[a-z]{2,5}$";
         public string regex_for_phone = "^[+]{1}[9]{1}[1]{1}[' ']{1}[0-9]{10}$";
-        public string regex_for_Password = "^[a-z]{8}$";
+        public string regex_for_Password = @"[A-Z]{1}[A-Za-z]{7}";
 
 
         public void validateFirstName(string fName)
