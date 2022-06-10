@@ -11,7 +11,7 @@
         {
             UserRegistration userRegistration = new UserRegistration();
             Console.WriteLine("Welcome to the User Registraion problem");
-            
+
             //Validating First Name
             Console.Write("Enter the First name: ");
             string Firstname = Console.ReadLine();
@@ -21,6 +21,11 @@
             Console.Write("Enter the last name: ");
             string Lastname = Console.ReadLine();
             userRegistration.validateLastname(Lastname);
+
+            //Validating Email
+            Console.Write("Enter the Email: ");
+            string Email = Console.ReadLine();
+            userRegistration.validateEmail(Email);
             
         }
     }
