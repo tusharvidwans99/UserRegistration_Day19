@@ -11,13 +11,17 @@
         {
             UserRegistration userRegistration = new UserRegistration();
             Console.WriteLine("Welcome to the User Registraion problem");
+            
+            //Validating First Name
             Console.Write("Enter the First name: ");
             string Firstname = Console.ReadLine();
+            userRegistration.validateFirstName(Firstname);
 
-            if (userRegistration.validateFirstName(Firstname))
-                Console.WriteLine("Pattern Match");
-            else
-                Console.WriteLine("Pattern not Match");
+            //validating Last Name
+            Console.Write("Enter the last name: ");
+            string Lastname = Console.ReadLine();
+            userRegistration.validateLastname(Lastname);
+            
         }
     }
 }
