@@ -12,7 +12,7 @@ namespace UserRegistration_Day19
 
         public string regex_for_fname = "^[A-Z]{1}[a-z]{2,10}$";
         public string regex_for_lname = "^[A-Z]{1}[a-z]{2,10}$";
-        public string regex_for_email = "^[a-z0-9]{1,10}['.']*[a-z0-9]{1,10}[@]{1}[a-z]{1,6}[.]{1}[a-z]{1,5}$";
+        public string regex_for_email = "^[a-z0-9]{1,10}['.']*[a-z0-9]{1,10}[@]{1}[a-z]{1,9}[.]{1}[a-z]{1,5}$";
 
         public void validateFirstName(string fName)
         {
