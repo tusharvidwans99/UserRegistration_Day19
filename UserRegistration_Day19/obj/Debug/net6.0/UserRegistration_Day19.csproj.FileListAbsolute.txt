@@ -1,0 +1,15 @@
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\bin\Debug\net6.0\UserRegistration_Day19.exe
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\bin\Debug\net6.0\UserRegistration_Day19.deps.json
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\bin\Debug\net6.0\UserRegistration_Day19.runtimeconfig.json
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\bin\Debug\net6.0\UserRegistration_Day19.dll
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\bin\Debug\net6.0\UserRegistration_Day19.pdb
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.csproj.AssemblyReference.cache
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.AssemblyInfoInputs.cache
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.AssemblyInfo.cs
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.csproj.CoreCompileInputs.cache
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.dll
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\refint\UserRegistration_Day19.dll
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.pdb
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\UserRegistration_Day19.genruntimeconfig.cache
+C:\Users\tusha\source\repos\UserRegistration_Day19\UserRegistration_Day19\obj\Debug\net6.0\ref\UserRegistration_Day19.dll
