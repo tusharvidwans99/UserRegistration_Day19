@@ -56,15 +56,27 @@ namespace UserRegistration_Day19
 
         public string validateEmail(string Email)
         {
-            if (Regex.IsMatch(Email, regex_for_email))
+            try
             {
-                Console.WriteLine("Email is Valid");
-                return "Email is Valid";
+                if (Regex.IsMatch(Email, regex_for_email))
+                {
+                    Console.WriteLine("Email is Valid");
+                    return "Email is Valid";
+                }
+                else
+                {
+                    Console.WriteLine("Email is Invalid");
+                    exceptionHandlerOfUser.Email();
+                    return "Email is Invalid";
+
+                }
+
             }
-            else
+            catch(EmailException e)
             {
-                Console.WriteLine("Email is Invalid");
+                Console.WriteLine(e.Message);
                 return "Email is Invalid";
+
             }
         }
 

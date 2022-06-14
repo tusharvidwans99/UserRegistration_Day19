@@ -17,5 +17,10 @@ namespace UserRegistration_Day19
         {
             throw (new LastNameException("Wrong Pattern for Last Name: \nFirst letter should be capital and it should have minimum 3 characters"));
         }
+
+        public void Email()
+        {
+            throw (new EmailException("Entered Invalid Email"));
+        }
     }
 }

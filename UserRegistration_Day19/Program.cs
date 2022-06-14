@@ -22,10 +22,10 @@
             string Lastname = Console.ReadLine();
             userRegistration.validateLastname(Lastname);
 
-            ////Validating Email
-            //Console.Write("Enter the Email: ");
-            //string Email = Console.ReadLine();
-            //userRegistration.validateEmail(Email);
+            //Validating Email
+            Console.Write("Enter the Email: ");
+            string Email = Console.ReadLine();
+            userRegistration.validateEmail(Email);
 
             ////Validating Phone Number
             //Console.Write("Enter the phone number: ");

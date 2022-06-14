@@ -21,4 +21,12 @@ namespace UserRegistration_Day19
 
         }
     }
+
+    public class EmailException : Exception
+    {
+        public EmailException(string message) : base(message)
+        {
+
+        }
+    }
 }
