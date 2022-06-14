@@ -27,15 +27,15 @@
             string Email = Console.ReadLine();
             userRegistration.validateEmail(Email);
 
-            ////Validating Phone Number
-            //Console.Write("Enter the phone number: ");
-            //string Number = Console.ReadLine();
-            //userRegistration.validatePhoneNumber(Number);
+            //Validating Phone Number
+            Console.Write("Enter the phone number: ");
+            string Number = Console.ReadLine();
+            userRegistration.validatePhoneNumber(Number);
 
-            ////Validating Password
-            //Console.Write("Enter the Password: ");
-            //string password = Console.ReadLine();
-            //userRegistration.validatePassword(password);
+            //Validating Password
+            Console.Write("Enter the Password: ");
+            string password = Console.ReadLine();
+            userRegistration.validatePassword(password);
 
 
         }

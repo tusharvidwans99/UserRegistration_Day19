@@ -104,10 +104,20 @@ namespace UserRegistration_Day19
 
         public void validatePassword(string password)
         {
-            if (Regex.IsMatch(password, regex_for_Password))
-                Console.WriteLine("Password is Valid");
-            else
-                Console.WriteLine("Password is invalid");
+            try
+            {
+                if (Regex.IsMatch(password, regex_for_Password))
+                    Console.WriteLine("Password is Valid");
+                else
+                {
+                    Console.WriteLine("Password is invalid");
+                    exceptionHandlerOfUser.Password();
+                }
+            }catch(PasswordException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
         }
     }
 }

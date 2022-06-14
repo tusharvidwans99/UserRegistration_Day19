@@ -27,5 +27,10 @@ namespace UserRegistration_Day19
         {
             throw (new PhoneNumberException("Wrong phone number entered"));
         }
+
+        public void Password()
+        {
+            throw (new PasswordException("All Password rules should be follow: \n1: Minimum 8 characters \n2: Atleast 1 UpperCase \n3: Atleast 1 numeric value\n 4: Exactly 1 special character"));
+        }
     }
 }
