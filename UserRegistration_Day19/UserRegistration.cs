@@ -75,6 +75,8 @@ namespace UserRegistration_Day19
             catch(EmailException e)
             {
                 Console.WriteLine(e.Message);
+                Console.WriteLine("-------------------------");
+                Console.WriteLine("-------------------------");
                 return "Email is Invalid";
 
             }
@@ -82,10 +84,21 @@ namespace UserRegistration_Day19
 
         public void validatePhoneNumber(string PhoneNumber)
         {
-            if (Regex.IsMatch(PhoneNumber, regex_for_phone))
-                Console.WriteLine("Phone Number is Valid");
-            else
-                Console.WriteLine("Phone Number is invalid");
+            try
+            {
+                if (Regex.IsMatch(PhoneNumber, regex_for_phone))
+                    Console.WriteLine("Phone Number is Valid");
+                else
+                    exceptionHandlerOfUser.PhoneNumber();
+            }
+            catch (PhoneNumberException e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("-------------------------");
+                Console.WriteLine("-------------------------");
+            }
+        
+        
         }
 
 

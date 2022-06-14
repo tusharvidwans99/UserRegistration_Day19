@@ -29,4 +29,12 @@ namespace UserRegistration_Day19
 
         }
     }
+
+    public class PhoneNumberException : Exception
+    {
+        public PhoneNumberException(string message) : base(message)
+        {
+
+        }
+    }
 }

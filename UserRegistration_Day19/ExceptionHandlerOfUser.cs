@@ -22,5 +22,10 @@ namespace UserRegistration_Day19
         {
             throw (new EmailException("Entered Invalid Email"));
         }
+
+        public void PhoneNumber()
+        {
+            throw (new PhoneNumberException("Wrong phone number entered"));
+        }
     }
 }
