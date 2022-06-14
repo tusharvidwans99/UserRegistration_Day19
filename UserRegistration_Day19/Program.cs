@@ -12,10 +12,10 @@
             UserRegistration userRegistration = new UserRegistration();
             Console.WriteLine("Welcome to the User Registraion problem");
 
-            ////Validating First Name
-            //Console.Write("Enter the First name: ");
-            //string Firstname = Console.ReadLine();
-            //userRegistration.validateFirstName(Firstname);
+            //Validating First Name
+            Console.Write("Enter the First name: ");
+            string Firstname = Console.ReadLine();
+            userRegistration.validateFirstName(Firstname);
 
             ////validating Last Name
             //Console.Write("Enter the last name: ");
@@ -32,10 +32,10 @@
             //string Number = Console.ReadLine();
             //userRegistration.validatePhoneNumber(Number);
 
-            //Validating Password
-            Console.Write("Enter the Password: ");
-            string password = Console.ReadLine();
-            userRegistration.validatePassword(password);
+            ////Validating Password
+            //Console.Write("Enter the Password: ");
+            //string password = Console.ReadLine();
+            //userRegistration.validatePassword(password);
 
             
         }

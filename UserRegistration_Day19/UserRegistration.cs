@@ -9,6 +9,7 @@ namespace UserRegistration_Day19
 {
     public class UserRegistration
     {
+        ExceptionHandlerOfUser exceptionHandlerOfUser = new ExceptionHandlerOfUser();
 
         public string regex_for_fname = "^[A-Z]{1}[a-z]{2,10}$";
         public string regex_for_lname = "^[A-Z]{1}[a-z]{2,10}$";
@@ -17,12 +18,20 @@ namespace UserRegistration_Day19
         public string regex_for_Password = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!#@%^&*(){}])[a-zA-Z0-9+-_!@#$%^&*(){}'.,]{8,}$";
 
 
+       
         public void validateFirstName(string fName)
         {
-            if (Regex.IsMatch(fName, regex_for_fname))
-                Console.WriteLine("First Name is valid");
-            else
-                Console.WriteLine("First Name is invalid");          
+            try
+            {
+                if (Regex.IsMatch(fName, regex_for_fname))
+                    Console.WriteLine("First Name is valid");
+                else
+                    exceptionHandlerOfUser.username();
+            }catch(UserNameException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
 
         }
 
