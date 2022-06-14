@@ -27,9 +27,11 @@ namespace UserRegistration_Day19
                     Console.WriteLine("First Name is valid");
                 else
                     exceptionHandlerOfUser.username();
-            }catch(UserNameException e)
+            }catch(FirstNameException e)
             {
                 Console.WriteLine(e.Message);
+                Console.WriteLine("-------------------------");
+                Console.WriteLine("-------------------------");
             }
 
 
@@ -37,10 +39,19 @@ namespace UserRegistration_Day19
 
         public void validateLastname(string lName)
         {
-            if (Regex.IsMatch(lName, regex_for_lname))
-                Console.WriteLine("Last Name is valid");
-            else
-                Console.WriteLine("Last name is invalid");
+            try
+            {
+                if (Regex.IsMatch(lName, regex_for_lname))
+                    Console.WriteLine("Last Name is valid");
+                else
+                    exceptionHandlerOfUser.lastname();
+            }catch(LastNameException e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("-------------------------");
+                Console.WriteLine("-------------------------");
+            }
+
         }
 
         public string validateEmail(string Email)

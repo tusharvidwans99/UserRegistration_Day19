@@ -17,10 +17,10 @@
             string Firstname = Console.ReadLine();
             userRegistration.validateFirstName(Firstname);
 
-            ////validating Last Name
-            //Console.Write("Enter the last name: ");
-            //string Lastname = Console.ReadLine();
-            //userRegistration.validateLastname(Lastname);
+            //validating Last Name
+            Console.Write("Enter the last name: ");
+            string Lastname = Console.ReadLine();
+            userRegistration.validateLastname(Lastname);
 
             ////Validating Email
             //Console.Write("Enter the Email: ");
@@ -37,7 +37,7 @@
             //string password = Console.ReadLine();
             //userRegistration.validatePassword(password);
 
-            
+
         }
     }
 }
