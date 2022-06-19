@@ -18,16 +18,31 @@ namespace UserRegistration_Day19
         public string regex_for_Password = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!#@%^&*(){}])[a-zA-Z0-9+-_!@#$%^&*(){}'.,]{8,}$";
 
 
-       
-        public void validateFirstName(string fName)
+        public bool FirstAndLastName(string input) => Regex.IsMatch(input, regex_for_fname) ? true : false;
+        public bool Email(string input) => Regex.IsMatch(input, regex_for_email) ? true : false;
+        public bool MobileNo(string input) => Regex.IsMatch(input, regex_for_phone) ? true : false;
+        public bool Password(string input) => Regex.IsMatch(input, regex_for_Password) ? true : false;
+
+        public void validateFirstName()
         {
             try
             {
-                if (Regex.IsMatch(fName, regex_for_fname))
+                Console.Write("Enter the First name: ");
+                string Firstname = Console.ReadLine();
+
+                bool ValidationforFirstName = FirstAndLastName(Firstname);
+
+                if (ValidationforFirstName)
                     Console.WriteLine("First Name is valid");
                 else
+                {
                     exceptionHandlerOfUser.username();
-            }catch(FirstNameException e)
+                    
+                }
+
+                
+            }
+            catch(FirstNameException e)
             {
                 Console.WriteLine(e.Message);
                 Console.WriteLine("-------------------------");
@@ -37,11 +52,16 @@ namespace UserRegistration_Day19
 
         }
 
-        public void validateLastname(string lName)
+        public void validateLastname()
         {
             try
             {
-                if (Regex.IsMatch(lName, regex_for_lname))
+                Console.Write("Enter the last name: ");
+                string Lastname = Console.ReadLine();
+
+                bool ValidationForLastName = FirstAndLastName(Lastname);
+
+                if (ValidationForLastName)
                     Console.WriteLine("Last Name is valid");
                 else
                     exceptionHandlerOfUser.lastname();
@@ -54,11 +74,16 @@ namespace UserRegistration_Day19
 
         }
 
-        public string validateEmail(string Email)
+        public string validateEmail()
         {
             try
             {
-                if (Regex.IsMatch(Email, regex_for_email))
+                Console.Write("Enter the Email: ");
+                string email = Console.ReadLine();
+
+                bool ValidationForEmail = Email(email);
+
+                if(ValidationForEmail)
                 {
                     Console.WriteLine("Email is Valid");
                     return "Email is Valid";
@@ -82,11 +107,16 @@ namespace UserRegistration_Day19
             }
         }
 
-        public void validatePhoneNumber(string PhoneNumber)
+        public void validatePhoneNumber()
         {
             try
             {
-                if (Regex.IsMatch(PhoneNumber, regex_for_phone))
+                Console.Write("Enter the phone number: ");
+                string Number = Console.ReadLine();
+
+                bool ValidationForPhoneNumber = MobileNo(Number);
+
+                if (ValidationForPhoneNumber)
                     Console.WriteLine("Phone Number is Valid");
                 else
                     exceptionHandlerOfUser.PhoneNumber();
@@ -102,11 +132,15 @@ namespace UserRegistration_Day19
         }
 
 
-        public void validatePassword(string password)
+        public void validatePassword()
         {
             try
             {
-                if (Regex.IsMatch(password, regex_for_Password))
+                Console.Write("Enter the Password: ");
+                string password = Console.ReadLine();
+                bool ValidationForPassword = Password(password);
+
+                if(ValidationForPassword)
                     Console.WriteLine("Password is Valid");
                 else
                 {

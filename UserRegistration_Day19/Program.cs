@@ -13,29 +13,19 @@
             Console.WriteLine("Welcome to the User Registraion problem");
 
             //Validating First Name
-            Console.Write("Enter the First name: ");
-            string Firstname = Console.ReadLine();
-            userRegistration.validateFirstName(Firstname);
+            userRegistration.validateFirstName();
 
             //validating Last Name
-            Console.Write("Enter the last name: ");
-            string Lastname = Console.ReadLine();
-            userRegistration.validateLastname(Lastname);
+            userRegistration.validateLastname();
 
             //Validating Email
-            Console.Write("Enter the Email: ");
-            string Email = Console.ReadLine();
-            userRegistration.validateEmail(Email);
+            userRegistration.validateEmail();
 
             //Validating Phone Number
-            Console.Write("Enter the phone number: ");
-            string Number = Console.ReadLine();
-            userRegistration.validatePhoneNumber(Number);
+            userRegistration.validatePhoneNumber();
 
             //Validating Password
-            Console.Write("Enter the Password: ");
-            string password = Console.ReadLine();
-            userRegistration.validatePassword(password);
+            userRegistration.validatePassword();
 
 
         }
